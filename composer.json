@@ -5,7 +5,6 @@
     "version": "7.4.0",
     "homepage": "http://fluidtypo3.org",
     "license": "GPL-2.0+",
-    "preferred-install": "dist",
     "support": {
         "irc": "irc://irc.freenode.org/fedext",
         "issues": "https://github.com/FluidTYPO3/fluidcontent/issues"
@@ -14,6 +13,10 @@
         "psr-4": {
             "FluidTYPO3\\Flux\\": "Classes/"
         }
+    },
+    "replace": {
+        "flux": "self.version",
+        "typo3-ter/flux": "self.version"
     },
     "suggest": {
         "fluidtypo3/vhs": "ViewHelper library for Fluid templates.",
